@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_dark">#FF121212</color>
+    <color name="toolbar_bg">#FF1F1B24</color>
+    <color name="status_bar_bg">#FF2E2A33</color>
+    <color name="accent">#FF7C4DFF</color>
+    <color name="success_green">#FF4CAF50</color>
+    <color name="error_red">#FFE53935</color>
+</resources>

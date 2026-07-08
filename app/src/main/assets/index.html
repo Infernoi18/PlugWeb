@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PlugWeb</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>PlugWeb</h1>
+  <p id="bridge-status">Checking bridge...</p>
+
+  <div class="item">
+    <button onclick="callPlugin('PLGN_IS_NETWORK_AVAILABLE')">Network Check</button>
+    <p id="result-network">-</p>
+  </div>
+
+  <div class="item">
+    <button onclick="callPlugin('PLGN_DEV_DETAILS')">Device Info</button>
+    <p id="result-device">-</p>
+  </div>
+
+  <div class="item">
+    <button onclick="callPlugin('PLGN_GET_IP')">Get IP Address</button>
+    <p id="result-ip">-</p>
+  </div>
+
+  <div class="item">
+    <button onclick="callPlugin('PLGN_APP_VERSION')">App Version</button>
+    <p id="result-version">-</p>
+  </div>
+
+  <div class="item">
+    <button onclick="callPlugin('PLGN_CRNT_LOCALE')">Current Locale</button>
+    <p id="result-locale">-</p>
+  </div>
+
+  <div class="item">
+    <button onclick="callPlugin('PLGN_APP_SIZE_INFO')">App Size Info</button>
+    <p id="result-appsize">-</p>
+  </div>
+
+  <div class="item">
+    <button onclick="callPlugin('PLGN_CHECK_GPS_STATUS')">GPS Status</button>
+    <p id="result-gps">-</p>
+  </div>
+
+  <div class="item">
+    <button onclick="callPlugin('PLGN_CHECK_ACCESSIBILITY_SETTINGS')">Accessibility Status</button>
+    <p id="result-accessibility">-</p>
+  </div>
+
+  <div class="item">
+    <button onclick="callPlugin('PLGN_OPEN_CAMERA')">Open Camera</button>
+    <p id="result-camera">-</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

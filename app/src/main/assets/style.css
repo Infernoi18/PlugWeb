@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  background: #121212;
+  color: #ffffff;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#bridge-status {
+  text-align: center;
+  font-size: 12px;
+  color: #9e9e9e;
+  margin-bottom: 20px;
+}
+
+.item {
+  background: #1F1B24;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+button {
+  width: 100%;
+  background: #7C4DFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #121212;
+  color: #ffffff;
+}
+
+.item p {
+  font-size: 13px;
+  color: #B388FF;
+  margin-top: 8px;
+  word-break: break-word;
+}
+
+.item p.error {
+  color: #E53935;
+}

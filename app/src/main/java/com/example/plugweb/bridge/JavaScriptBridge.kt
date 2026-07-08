@@ -1,6 +1,8 @@
 package com.example.plugweb.bridge
 
 import android.content.Context
+import android.content.Intent
+import com.example.plugweb.PluginDetailActivity
 import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import android.os.Handler
@@ -36,6 +38,17 @@ class JavaScriptBridge(
                 }
             }
             postResultToWebView(pluginName, resultJson)
+            
+            if (resultJson.optBoolean("success", false) || resultJson.has("data") || resultJson.has("error")) {
+                mainHandler.post {
+                    val intent = Intent(context, PluginDetailActivity::class.java).apply {
+                        putExtra("EXTRA_PLUGIN_NAME", pluginName)
+                        putExtra("EXTRA_JSON_DATA", resultJson.toString())
+                        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    }
+                    context.startActivity(intent)
+                }
+            }
         }.start()
     }
 

@@ -56,6 +56,9 @@ class PluginManager(private val context: Context) {
             PluginConstants.PLGN_CHECK_ACCESSIBILITY_SETTINGS ->
                 AccessibilityStatusPlugin(context).checkAccessibilityStatus()
 
+            PluginConstants.PLGN_CHECK_BIOMETRIC ->
+                BiometricPlugin(context).checkBiometricStatus()
+
             else -> JSONObject().apply {
                 put("success", false)
                 put("plugin", pluginName)

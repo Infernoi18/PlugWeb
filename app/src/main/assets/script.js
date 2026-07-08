@@ -8,6 +8,7 @@ const RESULT_ELEMENT_MAP = {
   PLGN_APP_SIZE_INFO: 'result-appsize',
   PLGN_CHECK_GPS_STATUS: 'result-gps',
   PLGN_CHECK_ACCESSIBILITY_SETTINGS: 'result-accessibility',
+  PLGN_CHECK_BIOMETRIC: 'result-biometric',
   PLGN_OPEN_CAMERA: 'result-camera'
 };
 

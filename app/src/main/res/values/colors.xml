@@ -7,4 +7,11 @@
     <color name="accent">#FF7C4DFF</color>
     <color name="success_green">#FF4CAF50</color>
     <color name="error_red">#FFE53935</color>
+
+    <!-- Plugin Specific Colors -->
+    <color name="color_network">#42A5F5</color>
+    <color name="color_device">#AB47BC</color>
+    <color name="color_location">#FF7043</color>
+    <color name="color_security">#66BB6A</color>
+    <color name="color_app">#26A69A</color>
 </resources>
